@@ -1,5 +1,3 @@
-PostmanCollections:- https://api.postman.com/collections/19775858-1b6e5903-f0f0-40bf-aa7d-9d9961219c1a?access_key=PMAT-01HD19QGN4HE9F2E70CX3QY8X7
-
 Env:- local: http://localhost:9000/
 
 .env ::::::
