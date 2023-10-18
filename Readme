@@ -1,0 +1,48 @@
+PostmanCollections:- https://api.postman.com/collections/19775858-1b6e5903-f0f0-40bf-aa7d-9d9961219c1a?access_key=PMAT-01HD19QGN4HE9F2E70CX3QY8X7
+
+Env:- local: http://localhost:9000/
+
+APIS ---------------------------------------------------------------->
+
+Buckets:------------------------>
+1- Add Bucket
+Tyep- POST
+Api- {{local}}api/buckets
+body:- JSON body
+data - {
+"bucketName":"secound-bucket"
+}
+
+2- Get Bucket
+Type- GET
+Api- {{local}}api/buckets
+
+Files:------------------------>
+1- Upload File/Files
+Tyep- POST
+Api- {{local}}api/buckets/:id/uploads
+params:- id of the bucket
+body:- form-data
+file - contains files
+
+2- Get Bucket Files
+Type- GET
+Api- {{local}}api/buckets/:id/uploads
+params:- id of the bucket
+
+3- Get Bucket Files Detail
+Type- GET
+Api- {{local}}api/buckets/:id/uploads/:fileId
+params:- id of the bucket and fileId is id of the file
+
+4- Update Bucket Files
+Type- PUT
+Api- {{local}}api/buckets/:id/uploads/:fileId
+params:- id of the bucket and fileId is id of the file
+body:- form-data
+file - contains single file to update
+
+5- Remove Bucket Files
+Type- DELETE
+Api- {{local}}api/buckets/:id/uploads/:fileId
+params:- id of the bucket and fileId is id of the file
