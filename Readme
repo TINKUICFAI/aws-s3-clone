@@ -2,6 +2,10 @@ PostmanCollections:- https://api.postman.com/collections/19775858-1b6e5903-f0f0-
 
 Env:- local: http://localhost:9000/
 
+.env ::::::
+PORT =
+LOCAL_MONGO_DB =
+
 APIS ---------------------------------------------------------------->
 
 Buckets:------------------------>
